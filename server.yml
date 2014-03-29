@@ -1,0 +1,8 @@
+- hosts: melody
+  user: vagrant
+  sudo: yes
+  tasks:
+    - name: install make
+      action: apt pkg=make
+    - name: install git
+      action: apt pkg=git
