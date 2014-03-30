@@ -8,3 +8,5 @@
       action: apt pkg=git
     - name: install zsh
       action: apt pkg=zsh
+    - name: add user masutaka
+      action: user name=masutaka comment='Takashi Masuda' shell=/usr/bin/zsh
