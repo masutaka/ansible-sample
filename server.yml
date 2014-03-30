@@ -13,3 +13,6 @@
     - name: copy README.md
       action: file state=directory path=/home/masutaka/hoge owner=masutaka group=masutaka mode=0755
       action: copy src=README.md dest=/home/masutaka/hoge/README.md owner=masutaka group=masutaka mode=0644
+    - name: git clone rbenv
+      action: git repo=https://github.com/sstephenson/rbenv.git dest=/home/masutaka/.rbenv
+      action: file path=/home/masutaka/.rbenv owner=masutaka group=masutaka recurse=yes
