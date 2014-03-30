@@ -10,3 +10,6 @@
       action: apt pkg=zsh
     - name: add user masutaka
       action: user name=masutaka comment='Takashi Masuda' shell=/usr/bin/zsh
+    - name: copy README.md
+      action: file state=directory path=/home/masutaka/hoge owner=masutaka group=masutaka mode=0755
+      action: copy src=README.md dest=/home/masutaka/hoge/README.md owner=masutaka group=masutaka mode=0644
